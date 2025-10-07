@@ -1,0 +1,132 @@
+body {
+  background: #2e1f0beb
+    url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  background-size: cover;
+  color: #f0e6d2;
+  font-family: "Georgia", serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  margin: 40px 0;
+}
+
+.titleh {
+  font-size: 3rem;
+  color: #d4af37;
+  text-shadow: 0 0 8px #d4af37;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #c6a84b;
+  font-style: italic;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.game {
+  background: rgba(20, 10, 0, 0.7);
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  padding: 20px;
+  width: 400px;
+  margin-top: 100px;
+}
+
+.title {
+  color: #d4af37;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.image {
+  height: 150px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.house {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.gryffindor,
+.slytherin {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+}
+
+.gryffindor {
+  color: #ae0001;
+  border-color: #ae0001;
+  background: rgba(174, 0, 1, 0.2);
+}
+
+.slytherin {
+  color: #2a623d;
+  border-color: #2a623d;
+  background: rgba(42, 98, 61, 0.2);
+}
+
+.play {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #d4af37;
+  color: #2e1f0b;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.play a {
+  text-decoration: none;
+  color: #2e1f0b;
+}
+
+.play:hover {
+  background: #e6c158;
+}
+
+ul {
+  text-align: left;
+  line-height: 1.4;
+  font-size: 0.95rem;
+  color: #e6d98d;
+  padding-left: 20px;
+}
+
+ul li strong {
+  color: #d4af37;
+}

@@ -1,0 +1,310 @@
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  min-height: 100vh;
+  background: #2e1f0beb
+    url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  color: #d4af37;
+  white-space: nowrap;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #efebdf;
+  padding-bottom: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.boards {
+  display: grid;
+  grid-template-columns: repeat(5, 190px);
+  grid-template-rows: repeat(5, 170px);
+  gap: 5px;
+  margin-top: 20px;
+  width: 50%;
+  height: 20%;
+  margin-left: 50px;
+}
+
+.sqr {
+  width: 190px;
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30%;
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 100px;
+  white-space: wrap;
+}
+
+.sqr h3 {
+  margin: 30% 0;
+  font-size: 1.2rem;
+  background-color: rgb(235, 235, 244);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.sqr p {
+  margin: 0;
+  font-size: 0.9rem;
+  background-color: rgba(10, 10, 42, 0.8);
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.board {
+  grid-template-columns: repeat(5, 150px);
+  grid-template-rows: repeat(5, 150px);
+}
+
+#sqr6,
+#sqr11 {
+  /* background-color: rgba(139, 69, 19, 0.3); */
+  grid-column: 3 span;
+  width: 100%;
+  height: 50%;
+  font-size: large;
+  color: black;
+  background: transparent;
+  color: #d4af37;
+}
+
+.score-display {
+  display: flex;
+  justify-content: space-between;
+}
+
+#message {
+  margin: 10px auto;
+  font-size: large;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 40px;
+  margin-top: 50px;
+  background-color: rgba(235, 235, 244, 0.08);
+  border: 1px solid wheat;
+  box-shadow: #c6c0af;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  white-space: wrap;
+}
+
+.moon {
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+#true,
+#false {
+  margin-top: 10px;
+  width: 50%;
+}
+#rollDice {
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 20%;
+  padding: 10%;
+  background-color: #d4af37;
+}
+.roll {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 20px;
+  margin-top: 340px;
+}
+.roll h2 {
+  border-bottom: 1px solid #d4af37;
+}
+
+#dicenum {
+  margin-top: 0;
+  margin-left: 90px;
+  width: 20%;
+  text-align: center;
+  color: #d4af37;
+  font-size: x-large;
+  padding: 2px;
+  border: 3px double wheat;
+  font-size: 1.8rem;
+}
+
+.winner {
+  font-size: large;
+  background-color: aqua;
+}
+
+.flip-card {
+  background-color: transparent;
+  text-align: center;
+  border-radius: 2%;
+  margin-bottom: 100px;
+  background-color: #c6c0af;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  width: 270px;
+  height: 400px;
+  background-size: cover;
+  border-radius: 10px;
+  background-image: url("https://i.pinimg.com/736x/1f/47/42/1f47427a42181ce8b0ce6ec02a4a0329.jpg");
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  border: 1px solid wheat;
+  box-shadow: #c6c0af;
+  padding: 10px 50px;
+  width: 180px;
+  height: 400px;
+  background-color: rgba(235, 235, 244, 0.08);
+}
+.gryffindor,
+.slytherin {
+  font-size: 30px;
+}
+
+#sqr0 {
+  background-image: url("https://i.pinimg.com/736x/dc/aa/26/dcaa266ea06c6037758a26ba39d2f1c0.jpg");
+}
+#sqr1 {
+  background-image: url("https://i.pinimg.com/736x/ae/53/d6/ae53d6b48d38f9c0928bcdb6ac99fa1a.jpg");
+}
+#sqr2 {
+  background-image: url("https://i.pinimg.com/736x/e9/2a/ca/e92acae58b86cdc2398606d1bb4f2cfe.jpg");
+}
+#sqr3 {
+  background-image: url("https://i.pinimg.com/736x/85/f4/03/85f4031a1f2724cf611e4399ba9eb62d.jpg");
+}
+#sqr4 {
+  background-image: url("https://i.pinimg.com/1200x/75/54/29/75542996643f70c6915c1d60b639ee07.jpg");
+  filter: opacity();
+}
+#sqr5 {
+  background-image: url("https://i.pinimg.com/736x/74/ed/47/74ed479844a1314fd6adb10762bf9a11.jpg");
+}
+#sqr9 {
+  background-image: url("https://i.pinimg.com/1200x/54/59/88/545988ca75f06fe6afd5fd053f4e8e1f.jpg");
+}
+#sqr10 {
+  background-image: url("https://i.pinimg.com/1200x/51/d0/2e/51d02eca5ea9b101d0ad64f014a11a50.jpg");
+}
+#sqr14 {
+  background-image: url("https://i.pinimg.com/1200x/bf/09/31/bf09318ef575eaa0a7bbcf12a35e7b75.jpg");
+}
+#sqr15 {
+  background-image: url("https://i.pinimg.com/736x/8e/0e/23/8e0e230f3606265cc4fc2a4e94e67a64.jpg");
+}
+#sqr16 {
+  background-image: url("https://i.pinimg.com/736x/6f/11/1e/6f111e9a857b1c5b4308ce5308ed3c4f.jpg");
+}
+#sqr17 {
+  background-image: url("https://i.pinimg.com/1200x/09/75/ce/0975ce09756cc1daa6f8ac1ea5714850.jpg");
+}
+#sqr18 {
+  background-image: url("https://i.pinimg.com/736x/77/d3/7c/77d37cb57f503566b1d68601cd0d2b2d.jpg");
+}
+#sqr19 {
+  background-image: url("https://i.pinimg.com/736x/81/27/3a/81273acf171ab4b68a25c4e259f7a716.jpg");
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .boards {
+    margin-right: 200px;
+  }
+  .moon {
+    margin-left: 800px;
+  }
+  .roll {
+    margin-left: 100px;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .moon {
+    margin-left: 600px;
+  }
+}
+
+/* .title.\--xl-large {
+  display: block;
+  position: relative;
+  font-size: 6rem;
+  letter-spacing: 10px;
+}
+
+.title.\--xl-large:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+  height: 4px;
+  transform: rotate(-10deg);
+  background-color: #111;
+}
+
+.level-winner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4rem;
+  background-color: #111;
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 250ms ease;
+} */
